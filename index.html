@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    
+
+  </head>
+    
+  <body>
+  import ds_python_interpreter
+
+html_content = """
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחקר חדשני: שיפור זיכרון והליכה בגיל השלישי</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --whatsapp-green: #25D366;
+            --text-color: #333;
+            --light-bg: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 20px; }
+        .hero-sub { font-size: 1.3rem; opacity: 0.9; }
+
+        .section {
+            background: var(--white);
+            margin: 20px 0;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            display: inline-block;
+            text-align: right;
+        }
+
+        .criteria-list {
+            list-style: none;
+            padding: 0;
+            text-align: right;
+        }
+
+        .criteria-list li {
+            margin-bottom: 15px;
+            padding-right: 35px;
+            position: relative;
+            font-size: 1.2rem;
+        }
+
+        .criteria-list li::before {
+            content: "✓";
+            position: absolute;
+            right: 0;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        /* עיצוב כפתור הוואטסאפ */
+        .whatsapp-section {
+            background: #eafff0;
+            border: 2px solid #25D366;
+        }
+
+        .whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--whatsapp-green);
+            color: white;
+            text-decoration: none;
+            padding: 18px 40px;
+            border-radius: 50px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            transition: transform 0.3s, background-color 0.3s;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+            margin-top: 20px;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #1ebe57;
+            transform: scale(1.05);
+        }
+
+        .whatsapp-icon {
+            margin-left: 12px;
+            width: 25px;
+            height: 25px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .whatsapp-button { font-size: 1.1rem; padding: 15px 25px; width: 100%; box-sizing: border-box; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>מחקר חדשני לשיפור הזיכרון וההליכה</h1>
+        <p class="hero-sub">טכנולוגיית גירוי מוחי (tDCS) בביתכם – למען שמירה על העצמאות ואיכות החיים</p>
+    </div>
+</header>
+
+<div class="container">
+    
+    <div class="section" style="text-align: right;">
+        <h2>על המחקר</h2>
+        <p>
+            אנו מזמינים אתכם להשתתף במחקר קליני הבוחן את ההשפעה של גירוי מוחי עדין ולא פולשני (tDCS) על תפקודי זיכרון ויציבות בהליכה. 
+            המחקר מתבצע בליווי צמוד של צוות מומחים ומיועד לסייע בשיפור התפקוד היומיומי של בני הגיל השלישי.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2 style="width: 100%; text-align: right;">למי המחקר מתאים?</h2>
+        <ul class="criteria-list">
+            <li>גברים ונשים בני <b>65 ומעלה</b>.</li>
+            <li>חשים <b>ירידה בזיכרון</b> ובביטחון  בזמן <b>הליכה</b>.</li>
+            <li>יכולת להתחייב לטיפול של 5 ימים בשבוע למשך חצי שנה.</li>
+            <li><b>חובה:</b> נוכחות של מלווה (בן משפחה/חבר/מטפל) לסיוע בהפעלת המכשיר.</li>
+        </ul>
+    </div>
+
+    <!-- חלק הוואטסאפ החדש -->
+    <div class="section whatsapp-section">
+        <h2>בדיקת התאמה מהירה</h2>
+        <p style="font-size: 1.2rem;">לחצו על הכפתור כדי לשלוח לנו הודעת וואטסאפ ולקבל פרטים נוספים מהחוקרים:</p>
+        
+        <a href="https://wa.me/972524266309?text=שלום,%20אני%20פונה%20בנוגע%20למחקר%20לשיפור%20הזיכרון%20וההליכה.%20אשמח%20לקבל%20פרטים." class="whatsapp-button" target="_blank">
+            <span>שלחו לנו הודעה בוואטסאפ</span>
+        </a>
+        
+        <p style="margin-top: 15px; font-size: 0.9rem; color: #666;">ניתן גם לפנות אלינו ישירות לטלפון: 03-6973538 או 03-6947514</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>המחקר מאושר על ידי ועדת הלסינקי | כל המידע נשמר תחת סודיות רפואית מלאה</p>
+    <p>&copy; 2026 המכון לחקר הליכה וניידות</p>
+</footer>
+
+</body>
+</html>
+"""
+
+# יצירת הקובץ המעודכן
+with open("research_landing_page_whatsapp.html", "w", encoding="utf-8") as f:
+    f.write(html_content)
+    
+  </body>
+  
+</html>
